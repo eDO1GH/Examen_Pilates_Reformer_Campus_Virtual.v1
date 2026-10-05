@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Examen instructorado de Pilates Reformer - Campus</title>
+    <style>
+        :root {
+            --primary-color: #2b6cb0;
+            --bg-color: #f7fafc;
+            --card-bg: #ffffff;
+            --text-color: #2d3748;
+            --border-color: #e2e8f0;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+        }
+        .container {
+            max-width: 800px;
+            width: 100%;
+            background: var(--card-bg);
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+        h1 {
+            color: var(--primary-color);
+            font-size: 24px;
+            margin-bottom: 10px;
+            border-bottom: 2px solid var(--border-color);
+            padding-bottom: 15px;
+        }
+        .intro-box {
+            background-color: #ebf8ff;
+            border-left: 4px solid var(--primary-color);
+            padding: 15px;
+            margin-bottom: 30px;
+            border-radius: 4px;
+            font-size: 14px;
+            line-height: 1.6;
+        }
+        .student-welcome {
+            font-weight: bold;
+            color: #2c5282;
+            margin-bottom: 20px;
+            font-size: 16px;
+        }
+        .question-card {
+            border: 1px solid var(--border-color);
+            padding: 20px;
+            margin-bottom: 25px;
+            border-radius: 6px;
+            background-color: #fff;
+        }
+        .question-title {
+            font-weight: 600;
+            margin-bottom: 12px;
+            font-size: 16px;
+        }
+        .question-meta {
+            font-size: 12px;
+            color: #718096;
+            margin-bottom: 15px;
+        }
+        .option-label {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 10px;
+            cursor: pointer;
+            padding: 8px;
+            border-radius: 4px;
+            transition: background 0.2s;
+        }
+        .option-label:hover {
+            background-color: #f7fafc;
+        }
+        .option-label input {
+            margin-right: 12px;
+            margin-top: 4px;
+        }
+        .hint {
+            margin-top: 12px;
+            font-size: 12px;
+            color: #a0aec0;
+            font-style: italic;
+        }
+        .btn-submit {
+            background-color: var(--primary-color);
+            color: white;
+            border: none;
+            padding: 14px 28px;
+            font-size: 16px;
+            font-weight: bold;
+            border-radius: 6px;
+            cursor: pointer;
+            width: 100%;
+            transition: background 0.2s;
+        }
+        .btn-submit:hover {
+            background-color: #2b6cb0;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Examen instructorado de Pilates Reformer - Campus</h1>
+    
+    <div class="intro-box">
+        Este examen consta de 26 preguntas con opciones múltiples. Las respuestas se pueden modificar las veces que sean necesarias antes del envío. Una vez enviado, se registrará tu calificación definitiva. Por favor revisa bien tus opciones antes de hacer clic en ENVIAR. ¡Suerte!
+    </div>
+
+    <div id="welcomeBox" class="student-welcome"></div>
+
+    <form id="quizForm">
+        <!-- P1 -->
+        <div class="question-card" data-type="single" data-id="1">
+            <div class="question-title">1. ¿En qué año y lugar nace Joseph Pilates?</div>
+            <div class="question-meta">1 punto • Selección única</div>
+            <label class="option-label"><input type="radio" name="p1" value="a"> a) 1880. Alemania</label>
+            <label class="option-label"><input type="radio" name="p1" value="b"> b) 1780. Rusia</label>
+            <label class="option-label"><input type="radio" name="p1" value="c"> c) 1980. Suecia</label>
+            <div class="hint">Pista: Instructorado Pilates Reformer (Campus Virtual)</div>
+        </div>
+
+        <!-- P2 -->
+        <div class="question-card" data-type="single" data-id="2">
+            <div class="question-title">2. ¿Qué es Pilates?</div>
+            <div class="question-meta">1 punto • Selección única</div>
+            <label class="option-label"><input type="radio" name="p2" value="a"> a) Una serie de ejercicios encadenados</label>
+            <label class="option-label"><input type="radio" name="p2" value="b"> b) Un método de entrenamiento</label>
+            <label class="option-label"><input type="radio" name="p2" value="c"> c) Un conjunto de 36 movimientos</label>
+            <div class="hint">Pista: Instructorado Pilates Reformer (Campus Virtual)</div>
+        </div>
+
+        <!-- P3 -->
+        <div class="question-card" data-type="single" data-id="3">
+            <div class="question-title">3. ¿Cómo se llamó antes de ser Pilates?</div>
+            <div class="question-meta">1 punto • Selección única</div>
+            <label class="option-label"><input type="radio" name="p3" value="a"> a) Power house</label>
+            <label class="option-label"><input type="radio" name="p3" value="b"> b) Contrology</label>
+            <label class="option-label"><input type="radio" name="p3" value="c"> c) Centralización</label>
+            <div class="hint">Pista: Instructorado Pilates Reformer (Campus Virtual)</div>
+        </div>
+
+        <!-- P4 -->
+        <div class="question-card" data-type="single" data-id="4">
+            <div class="question-title">4. ¿Cómo llamó a nuestro centro?</div>
+            <div class="question-meta">1 punto • Selección única</div>
+            <label class="option-label"><input type="radio" name="p4" value="a"> a) Arte del control</label>
+            <label class="option-label"><input type="radio" name="p4" value="b"> b) Mansión del poder</label>
+            <label class="option-label"><input type="radio" name="p4" value="c"> c) Centro</label>
+            <div class="hint">Pista: Instructorado Pilates Reformer (Campus Virtual)</div>
+        </div>
+
+        <!-- P5 -->
+        <div class="question-card" data-type="multiple" data-id="5">
+            <div class="question-title">5. ¿Cuáles de estos principios fue creado por Joseph?</div>
+            <div class="question-meta">1 punto • Selección múltiple</div>
+            <label class="option-label"><input type="checkbox" name="p5" value="a"> a) Precisión</label>
+            <label class="option-label"><input type="checkbox" name="p5" value="b"> b) Centralización</label>
+            <label class="option-label"><input type="checkbox" name="p5" value="c"> c) Control</label>
+            <label class="option-label"><input type="checkbox" name="p5" value="d"> d) Respiración</label>
+            <label class="option-label"><input type="checkbox" name="p5" value="e"> e) Fluidez</label>
+            <div class="hint">Pista: Instructorado Pilates Reformer (Campus Virtual)</div>
+        </div>
+
+        <!-- P6 -->
+        <div class="question-card" data-type="single" data-id="6">
+            <div class="question-title">6. ¿Qué principio de Pilates se relaciona con la mente guiando el cuerpo y la importancia de que el alumno esté conectado con sus movimientos?</div>
+            <div class="question-meta">1 punto • Selección única</div>
+            <label class="option-label"><input type="radio" name="p6" value="a"> a) Centralización.</label>
+            <label class="option-label"><input type="radio" name="p6" value="b"> b) Concentración.</label>
+            <label class="option-label"><input type="radio" name="p6" value="c"> c) Control.</label>
+            <label class="option-label"><input type="radio" name="p6" value="d"> d) Respiración</label>
+            <div class="hint">Pista: Instructorado Pilates Reformer (Campus Virtual)</div>
+        </div>
+
+        <!-- P7 -->
+        <div class="question-card" data-type="single" data-id="7">
+            <div class="question-title">7. El principio de Respiración es "parte integral de cada ejercicio, siendo siempre coordinada con el movimiento". Si un instructor permite que sus alumnos realicen los movimientos de forma desordenada y sin prestar atención a su patrón respiratorio, ¿está aplicando el principio de forma efectiva?</div>
+            <div class="question-meta">1 punto • Selección única</div>
+            <label class="option-label"><input type="radio" name="p7" value="a"> Sí</label>
+            <label class="option-label"><input type="radio" name="p7" value="b"> No</label>
+            <div class="hint">Pista: Instructorado Pilates Reformer (Campus Virtual)</div>
+        </div>
+
+        <!-- P8 -->
+        <div class="question-card" data-type="multiple" data-id="8">
+            <div class="question-title">8. ¿Cuáles de las siguientes afirmaciones describen la respiración torácica utilizada en Pilates?</div>
+            <div class="question-meta">1 punto • Selección múltiple</div>
+            <label class="option-label"><input type="checkbox" name="p8" value="a"> a) Al inspirar, se expande la parrilla costal y el ombligo va hacia adentro y hacia arriba.</label>
+            <label class="option-label"><input type="checkbox" name="p8" value="b"> b) Al exhalar, el abdomen se expande.</label>
+            <label class="option-label"><input type="checkbox" name="p8" value="c"> c) Al exhalar, se realiza una contracción del transverso abdominal.</label>
+            <label class="option-label"><input type="checkbox" name="p8" value="d"> d) Al exhalar, las costillas se acercan hacia el centro del cuerpo, disminuyendo el diámetro torácico.</label>
+            <div class="hint">Pista: Instructorado Pilates Reformer (Campus Virtual)</div>
+        </div>
+
+        <!-- P9 -->
+        <div class="question-card" data-type="single" data-id="9">
+            <div class="question-title">9. La centralización hace referencia a contraer el centro para fijar la columna antes y durante el movimiento.</div>
+            <div class="question-meta">1 punto • Selección única</div>
+            <label class="option-label"><input type="radio" name="p9" value="a"> Verdadero</label>
+            <label class="option-label"><input type="radio" name="p9" value="b"> Falso</label>
+            <div class="hint">Pista: Instructorado Pilates Reformer (Campus Virtual)</div>
+        </div>
+
+        <div class="question-card" data-type="multiple" data-id="10">
+            <div class="question-title">10. ¿Cuáles de los siguientes son movimientos de la columna vertebral?</div>
+            <div class="question-meta">1 punto • Selección múltiple</div>
+            <label class="option-label"><input type="checkbox" name="p10" value="a"> a) Flexión.</label>
+            <label class="option-label"><input type="checkbox" name="p10" value="b"> b) Inclinación lateral.</label>
+            <label class="option-label"><input type="checkbox" name="p10" value="c"> c) Rotación.</label>
+            <label class="option-label"><input type="checkbox" name="p10" value="d"> d) Abducción.</label>
+            <label class="option-label"><input type="checkbox" name="p10" value="e"> e) Extensión.</label>
+            <div class="hint">Pista: Instructorado Pilates Reformer (Campus Virtual)</div>
+        </div>
+
+        <div class="question-card" data-type="single" data-id="11">
+            <div class="question-title">11. ¿Cuál es la posición de la columna que mecánicamente es la más adecuada por respetar las curvaturas naturales, pero que al inicio puede ser difícil de implementar en Pilates?</div>
+            <div class="question-meta">1 punto • Selección única</div>
+            <label class="option-label"><input type="radio" name="p11" value="a"> a) Retroversión pélvica.</label>
+            <label class="option-label"><input type="radio" name="p11" value="b"> b) Columna en posición neutra.</label>
+            <label class="option-label"><input type="radio" name="p11" value="c"> c) Flexión lumbar completa.</label>
+            <label class="option-label"><input type="radio" name="p11" value="d"> d) Hiperextensión de la columna</label>
+            <div class="hint">Pista: Instructorado Pilates Reformer (Campus Virtual)</div>
+        </div>
+
+        <div class="question-card" data-type="single" data-id="12">
+            <div class="question-title">12. ¿Se puede trabajar con las tres posiciones de columna?</div>
+            <div class="question-meta">1 punto • Selección única</div>
+            <label class="option-label"><input type="radio" name="p12" value="a"> Sí</label>
+            <label class="option-label"><input type="radio" name="p12" value="b"> No</label>
+            <div class="hint">Pista: Instructorado Pilates Reformer (Campus Virtual)</div>
+        </div>
+
+        <div class="question-card" data-type="single" data-id="13">
+            <div class="question-title">13. La entrada en calor es fundamental para preparar al alumno: física, fisiológica y psicológicamente para realizar la actividad.</div>
+            <div class="question-meta">1 punto • Selección única</div>
+            <label class="option-label"><input type="radio" name="p13" value="a"> Verdadero</label>
+            <label class="option-label"><input type="radio" name="p13" value="b"> Falso</label>
+            <div class="hint">Pista: Instructorado Pilates Reformer (Campus Virtual)</div>
+        </div>
+
+        <div class="question-card" data-type="single" data-id="14">
+            <div class="question-title">14. ¿Los encadenamientos y transiciones me dan fluidez en la clase y evita baches?</div>
+            <div class="question-meta">1 punto • Selección única</div>
+            <label class="option-label"><input type="radio" name="p14" value="a"> Verdadero</label>
+            <label class="option-label"><input type="radio" name="p14" value="b"> Falso</label>
+            <div class="hint">Pista: Instructorado Pilates Reformer (Campus Virtual)</div>
+        </div>
+
+        <div class="question-card" data-type="single" data-id="15">
+            <div class="question-title">15. ¿Cuál de los siguientes es el primer paso en el diseño de un programa de entrenamiento de Pilates?</div>
+            <div class="question-meta">1 punto • Selección única</div>
+            <label class="option-label"><input type="radio" name="p15" value="a"> a) Selección de ejercicios.</label>
+            <label class="option-label"><input type="radio" name="p15" value="b"> b) Frecuencia de entrenamiento.</label>
+            <label class="option-label"><input type="radio" name="p15" value="c"> c) Análisis de las necesidades.</label>
+            <label class="option-label"><input type="radio" name="p15" value="d"> d) Orden de los ejercicios.</label>
+            <div class="hint">Pista: Instructorado Pilates Reformer (Campus Virtual)</div>
+        </div>
+
+        <div class="question-card" data-type="multiple" data-id="16">
+            <div class="question-title">16. ¿Cuáles de los siguientes aspectos se deben observar en un alumno para determinar si está apto para avanzar en la dificultad de los ejercicios, según el "Principio de progresión"?</div>
+            <div class="question-meta">1 punto • Selección múltiple</div>
+            <label class="option-label"><input type="checkbox" name="p16" value="a"> a) Tensión de hombros.</label>
+            <label class="option-label"><input type="checkbox" name="p16" value="b"> b) Cantidad de repeticiones realizadas.</label>
+            <label class="option-label"><input type="checkbox" name="p16" value="c"> c) Rigidez de la columna.</label>
+            <label class="option-label"><input type="checkbox" name="p16" value="d"> d) Estabilidad lumbo-pélvica.</label>
+            <div class="hint">Pista: Instructorado Pilates Reformer (Campus Virtual)</div>
+        </div>
+
+        <div class="question-card" data-type="single" data-id="17">
+            <div class="question-title">17. ¿Qué se entiende por "entrenamiento"?</div>
+            <div class="question-meta">1 punto • Selección única</div>
+            <label class="option-label"><input type="radio" name="p17" value="a"> a) La capacidad de superar una resistencia externa mediante una contracción muscular.</label>
+            <label class="option-label"><input type="radio" name="p17" value="b"> b) El control neuromuscular del movimiento.</label>
+            <label class="option-label"><input type="radio" name="p17" value="c"> c) El proceso pedagógico por el cual se conduce a la mejora de su condición física.</label>
+            <label class="option-label"><input type="radio" name="p17" value="d"> d) Un conjunto de cosas sucesivas de un fenómeno.</label>
+            <div class="hint">Pista: Instructorado Pilates Reformer (Campus Virtual)</div>
+        </div>
+
+        <div class="question-card" data-type="single" data-id="18">
+            <div class="question-title">18. Las capacidades físicas que podemos trabajar en Pilates son:</div>
+            <div class="question-meta">1 punto • Selección única</div>
+            <label class="option-label"><input type="radio" name="p18" value="a"> a) Flexibilidad</label>
+            <label class="option-label"><input type="radio" name="p18" value="b"> b) Fuerza</label>
+            <label class="option-label"><input type="radio" name="p18" value="c"> c) Coordinación</label>
+            <label class="option-label"><input type="radio" name="p18" value="d"> d) Todas</label>
+            <label class="option-label"><input type="radio" name="p18" value="e"> e) Ninguna</label>
+            <div class="hint">Pista: Instructorado Pilates Reformer (Campus Virtual)</div>
+        </div>
+
+        <div class="question-card" data-type="single" data-id="19">
+            <div class="question-title">19. ¿Qué beneficios aporta un CORE fuerte?</div>
+            <div class="question-meta">1 punto • Selección única</div>
+            <label class="option-label"><input type="radio" name="p19" value="a"> a) Estabilidad y equilibrio.</label>
+            <label class="option-label"><input type="radio" name="p19" value="b"> b) Control de la postura corporal.</label>
+            <label class="option-label"><input type="radio" name="p19" value="c"> c) Reducción del riesgo de lesiones.</label>
+            <label class="option-label"><input type="radio" name="p19" value="d"> d) Alivio del dolor de espalda.</label>
+            <label class="option-label"><input type="radio" name="p19" value="e"> e) Todas son correctas</label>
+            <div class="hint">Pista: Instructorado Pilates Reformer (Campus Virtual)</div>
+        </div>
+
+        <div class="question-card" data-type="single" data-id="20">
+            <div class="question-title">20. ¿Qué sucede con la columna vertebral en un abdominal bolita donde las rodillas están flexionadas, los pies apoyados en el piso y el torso se eleva hasta despegar las escápulas?</div>
+            <div class="question-meta">1 punto • Selección única</div>
+            <label class="option-label"><input type="radio" name="p20" value="a"> a) Compresión</label>
+            <label class="option-label"><input type="radio" name="p20" value="b"> b) Hiperextensión</label>
+            <label class="option-label"><input type="radio" name="p20" value="c"> c) Flexión</label>
+            <label class="option-label"><input type="radio" name="p20" value="d"> d) Rotación</label>
+            <div class="hint">Pista: Instructorado Pilates Reformer (Campus Virtual)</div>
+        </div>
+
+        <div class="question-card" data-type="single" data-id="21">
+            <div class="question-title">21. Según el "Cuadro de los músculos de la columna vertebral", ¿cuál de los siguientes es un motor primario para la flexión de la columna cervical?</div>
+            <div class="question-meta">1 punto • Selección única</div>
+            <label class="option-label"><input type="radio" name="p21" value="a"> a) Esplenio</label>
+            <label class="option-label"><input type="radio" name="p21" value="b"> b) Trapecio (porción superior)</label>
+            <label class="option-label"><input type="radio" name="p21" value="c"> c) Recto ant. Mayor de la cabeza</label>
+            <label class="option-label"><input type="radio" name="p21" value="d"> d) Complexo mayor y menor</label>
+            <div class="hint">Pista: Instructorado Pilates Reformer (Campus Virtual)</div>
+        </div>
+
+        <div class="question-card" data-type="multiple" data-id="22">
+            <div class="question-title">22. Según el "Cuadro de los músculos que mueven el hombro", ¿cuál es un motor primario para la rotación externa del hombro?</div>
+            <div class="question-meta">1 punto • Selección múltiple</div>
+            <label class="option-label"><input type="checkbox" name="p22" value="a"> a) Infraespinoso</label>
+            <label class="option-label"><input type="checkbox" name="p22" value="b"> b) Dorsal ancho.</label>
+            <label class="option-label"><input type="checkbox" name="p22" value="c"> c) Biceps</label>
+            <label class="option-label"><input type="checkbox" name="p22" value="d"> d) Redondo menor</label>
+            <div class="hint">Pista: Instructorado Pilates Reformer (Campus Virtual)</div>
+        </div>
+
+        <div class="question-card" data-type="single" data-id="23">
+            <div class="question-title">23. Según el cuadro de "Músculos de la Cadera", ¿cuál de los siguientes es uno de los motores primarios para la flexión de la cadera?</div>
+            <div class="question-meta">1 punto • Obligatoria • Selección única</div>
+            <label class="option-label"><input type="radio" name="p23" value="a"> a) Glúteo mayor.</label>
+            <label class="option-label"><input type="radio" name="p23" value="b"> b) Psoas iliaco.</label>
+            <label class="option-label"><input type="radio" name="p23" value="c"> c) Semitendinoso</label>
+            <label class="option-label"><input type="radio" name="p23" value="d"> d) Gemelo.</label>
+            <div class="hint">Pista: Instructorado Pilates Reformer (Campus Virtual)</div>
+        </div>
+
+        <div class="question-card" data-type="single" data-id="24">
+            <div class="question-title">24. Según el cuadro de "Músculos de la rodilla", ¿Cuál es el motor primario de la extensión?</div>
+            <div class="question-meta">1 punto • Obligatoria • Selección única</div>
+            <label class="option-label"><input type="radio" name="p24" value="a"> a) Biceps</label>
+            <label class="option-label"><input type="radio" name="p24" value="b"> b) Triceps</label>
+            <label class="option-label"><input type="radio" name="p24" value="c"> c) Cuadriceps</label>
+            <label class="option-label"><input type="radio" name="p24" value="d"> d) Soleo</label>
+            <div class="hint">Pista: Instructorado Pilates Reformer (Campus Virtual)</div>
+        </div>
+
+        <div class="question-card" data-type="single" data-id="25">
+            <div class="question-title">25. ¿Qué son las cadenas musculares?</div>
+            <div class="question-meta">1 punto • Obligatoria • Selección única</div>
+            <label class="option-label"><input type="radio" name="p25" value="a"> a) Un conjunto de huesos que permiten el movimiento.</label>
+            <label class="option-label"><input type="radio" name="p25" value="b"> b) Músculos que trabajan de forma aislada.</label>
+            <label class="option-label"><input type="radio" name="p25" value="c"> c) Un conjunto de músculos y tejidos conectivos en sinergia.</label>
+            <label class="option-label"><input type="radio" name="p25" value="d"> d) Tendones y ligamentos.</label>
+            <div class="hint">Pista: Instructorado Pilates Reformer (Campus Virtual)</div>
+        </div>
+
+        <div class="question-card" data-type="single" data-id="26">
+            <div class="question-title">26. ¿Los músculos tónicos son músculos posturales que se mantienen activos la mayor parte del tiempo?</div>
+            <div class="question-meta">1 punto • Obligatoria • Selección única</div>
+            <label class="option-label"><input type="radio" name="p26" value="a"> Verdadero</label>
+            <label class="option-label"><input type="radio" name="p26" value="b"> Falso</label>
+            <div class="hint">Pista: Instructorado Pilates Reformer (Campus Virtual)</div>
+        </div>
+
+        <button type="button" class="btn-submit" onclick="procesarYEnviar()">ENVIAR RESPUESTAS</button>
+    </form>
+</div>
+
+<script>
+    const URL_GOOGLE_DRIVE = "https://script.google.com/macros/s/AKfycbwTZv9CFpseh_NhRDzbviddUdBxwi2qxo1brNrrvKzg34bYV3v6Jop10Dek5NcVNKp/exec";
+    const NOMBRE_EXAMEN = "Instructorado de Pilates Reformer - Campus";
+
+    const CLAVE_RESPUESTAS = {
+        1: "a", 2: "b", 3: "b", 4: "b", 5: ["a", "b", "c", "d", "e"], 
+        6: "b", 7: "b", 8: ["a", "c", "d"], 9: "a", 10: ["a", "b", "c", "e"], 
+        11: "b", 12: "a", 13: "a", 14: "a", 15: "c", 16: ["a", "c", "d"], 
+        17: "c", 18: "d", 19: "e", 20: "c", 21: "c", 22: ["a", "d"], 
+        23: "b", 24: "c", 25: "c", 26: "a"
+    };
+
+    let nombreAlumno = "";
+
+    window.onload = function() {
+        pedirNombre();
+    };
+
+    function pedirNombre() {
+        nombreAlumno = prompt("Por favor, introduce tu Nombre y Apellido para iniciar la evaluación:");
+        if (!nombreAlumno || nombreAlumno.trim() === "") {
+            alert("Es obligatorio identificarse para rendir el examen.");
+            pedirNombre();
+        } else {
+            nombreAlumno = nombreAlumno.trim();
+            document.getElementById("welcomeBox").innerText = "Alumno activo: " + nombreAlumno;
+        }
+    }
+
+    function procesarYEnviar() {
+        if (!nombreAlumno) {
+            alert("No se ha registrado el nombre del alumno.");
+            return;
+        }
+
+        if (!confirm("¿Estás seguro de que deseas enviar tus respuestas? No podrás corregirlas después.")) {
+            return;
+        }
+
+        let totalPreguntas = Object.keys(CLAVE_RESPUESTAS).length;
+        let puntajeLogrado = 0;
+
+        for (let id in CLAVE_RESPUESTAS) {
+            let correctas = CLAVE_RESPUESTAS[id];
+            let card = document.querySelector(`.question-card[data-id="${id}"]`);
+            let tipo = card.getAttribute("data-type");
+
+            if (tipo === "single") {
+                let seleccionada = card.querySelector(`input[name="p${id}"]:checked`);
+                if (seleccionada && seleccionada.value === correctas) {
+                    puntajeLogrado++;
+                }
+            } else if (tipo === "multiple") {
+                let seleccionadas = Array.from(card.querySelectorAll(`input[name="p${id}"]:checked`)).map(el => el.value);
+                let esCorrecto = seleccionadas.length === correctas.length && 
+                                 seleccionadas.every(v => correctas.includes(v));
+                if (esCorrecto) {
+                    puntajeLogrado++;
+                }
+            }
+        }
+
+        let porcentaje = ((puntajeLogrado / totalPreguntas) * 100).toFixed(0) + "%";
+        let aciertosFormato = puntajeLogrado + " / " + totalPreguntas;
+
+        let datos = {
+            alumno: nombreAlumno,
+            examen: NOMBRE_EXAMEN,
+            aciertos: aciertosFormato,
+            porcentaje: porcentaje
+        };
+
+        document.querySelector(".btn-submit").disabled = true;
+        document.querySelector(".btn-submit").innerText = "Guardando en el sistema...";
+
+        fetch(URL_GOOGLE_DRIVE, {
+            method: "POST",
+            mode: "no-cors",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify(datos)
+        })
+        .then(() => {
+            alert("¡Perfecto! Tus respuestas se han enviado con éxito y quedaron registradas en la planilla del docente.");
+            document.querySelector(".btn-submit").innerText = "EXAMEN ENTREGADO";
+        })
+        .catch(err => {
+            console.error(err);
+            alert("Ocurrió un error al guardar tu nota. Por favor toma captura de tu pantalla y avísale al docente.");
+            document.querySelector(".btn-submit").disabled = false;
+            document.querySelector(".btn-submit").innerText = "REINTENTAR ENVIAR";
+        });
+    }
+</script>
+</body>
+</html>
